@@ -1,73 +1,46 @@
-ディレクトリの構造・説明
-=====================================
+# Hidden Markov Model Analysis for Scanpath Data
 
-研究会資料
-----------------------
-こちらには研究会の資料がまとめて入っています。
-`01_M1`と`02_M2`でディレクトリが分かれています。
-研究の進捗は研究会の資料に直接書き込んでいました。
+This project provides tools for analyzing scanpath data using Hidden Markov Models (HMMs). It includes functions for data preprocessing, HMM training, evaluation, and visualization.
 
-学会資料
-----------------------
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Data Preparation](#data-preparation)
+  - [Training and Evaluation](#training-and-evaluation)
+  - [Visualization](#visualization)
+- [Dependencies](#dependencies)
+- [Project Structure](#project-structure)
+- [License](#license)
 
-学会等学外に発表した資料（原稿、ポスター、スライド）がまとめられています。
-ディレクトリの内容は下記のとおりです。
+---
 
-```
- 01_秋JSET（原稿＋ポスター）
- 02_春JSET（原稿＋スライド）
- 03_ICIET（原稿＋スライド）
- 04_IEEE_TLE（原稿＋提出資料＋英文校正）
- 05_シンポジウム（発表資料）
-```
+## Overview
 
-学務関連
-----------------------
+This project is designed to analyze scanpath data using HMMs. It supports tasks such as:
+- Training HMMs on scanpath data.
+- Evaluating models using metrics like accuracy, F1-score, recall, and confusion matrices.
+- Visualizing transition and emission probabilities as heatmaps.
 
-修論の各審査書類が格納されています。ディレクトリの内容は下記のとおりです。
+The primary goal is to understand cognitive and perceptual processes through scanpath data.
 
-```
- 01_M1書類審査（原稿）
- 02_M2中間審査（原稿＋スライド＋質疑とフィードバックのコメント）
- 03_最終審査・修士論文（thesis＋要旨＋最終提出書類一式＋スライド＋審査会からの先生のコメント）
-```
+---
 
-倫理審査
-----------------------
+## Features
 
-倫理審査の書類が入っています。内容は下記のとおりです。
+- **Data Preprocessing**: Functions to load and preprocess scanpath data from CSV files.
+- **HMM Training**: Train HMMs with varying numbers of hidden states.
+- **Evaluation**: Evaluate models using cross-validation and various metrics.
+- **Visualization**: Generate heatmaps for transition and emission probabilities.
+- **Support for Multiple Groups**: Compare models across different groups (e.g., cognitive styles, age groups).
 
-    ライフサイエンス支援室事前チェック
-    最終提出版
-    承認通知書
+---
 
+## Installation
 
-文献調査
-----------------------
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
 
-個人的に勉強して調べたものが載っています。
-
-
-アプリ実装
-----------------------
-
-4章で構築したシステムのプログラムが一通りあります。詳細はディレクトリ内のREADME.mdで解説します。
-
-
-第3章
-----------------------
-
-3章で使用した実験実施資料とデータがあります。
-
-
-第4章
-----------------------
-
-4章で使用した実験実施資料とデータが成人・児童で分かれて格納してあります。
-詳細はディレクトリの中のREADME.mdに記載しました
-
-第5・6章
-----------------------
-
-5章と6章で解析したデータと解析プログラムがあります。
-詳細はディレクトリの中のREADME.mdに記載しました
